@@ -65,7 +65,7 @@ PALETTEFILE = $(TOPDIR)/blakston.pal
 # -DFMT_UNICODE=0 			Disables Unicode support for fmtlib
 # -std=c++20 				Select the C++20 language standard
 
-CCOMMONFLAGS = -x c++ -Wno-unused-result -Werror -DBLAK_PLATFORM_LINUX -DFMT_UNICODE=0 -std=c++20
+CCOMMONFLAGS = -x c++ -Wno-unused-result -Werror -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -DBLAK_PLATFORM_LINUX -DFMT_UNICODE=0 -std=c++20
 
 OS := $(shell uname)
 
